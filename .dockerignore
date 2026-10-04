@@ -1,0 +1,7 @@
+.git
+.github
+node_modules
+docker-compose.yml
+render.yaml
+DEPLOY.md
+.dockerignore
