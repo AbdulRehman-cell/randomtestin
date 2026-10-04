@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brew & Co. | Artisanal Coffee & Creative Space in Brooklyn</title>
+  
+  <!-- Inline Emoji Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+  
+  <!-- Google Fonts Pairing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Main Script -->
+  <script src="script.js" defer></script>
+<style>
+@keyframes fa-emergency-reveal { to { opacity: 1 !important; visibility: visible !important; } }
+.scroll-reveal:not(.is-visible),.reveal:not(.active):not(.is-visible),.fade-in:not(.visible):not(.in),.slide-in:not(.visible):not(.in),.fade-up:not(.is-visible),.fade-down:not(.is-visible),.zoom-in:not(.is-visible),.animate:not(.animated),.animate-up:not(.in),.will-animate:not(.animated),.animate-on-scroll:not(.animated):not(.in-view),.animate-on-load:not(.in-view):not(.visible),[data-aos]:not(.aos-animate),[data-reveal]:not(.in-view):not(.is-visible),[data-scroll]:not(.is-inview):not(.in-view),[data-animate]:not(.is-visible):not(.animated) { animation: fa-emergency-reveal 0.4s ease 4s forwards !important; }
+</style>
+<script>
+(function(){try{
+  var conv={'scroll-reveal':'is-visible','reveal':'active','fade-in':'visible','slide-in':'visible','fade-up':'is-visible','fade-down':'is-visible','zoom-in':'is-visible','animate-on-scroll':'animated','animate-on-load':'in-view','animate-up':'in','animate':'animated','will-animate':'animated'};
+  var attrs=[['data-reveal','in-view'],['data-scroll','is-inview'],['data-animate','is-visible'],['data-aos','aos-animate']];
+  function revealAllAbove(){
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    function pin(el,cls){el.classList.add(cls);el.style.setProperty('opacity','1','important');el.style.setProperty('visibility','visible','important');el.style.transform='';}
+    Object.keys(conv).forEach(function(c){
+      document.querySelectorAll('.'+c).forEach(function(el){
+        if(el.getBoundingClientRect().top<vh)pin(el,conv[c]);
+      });
+    });
+    attrs.forEach(function(a){
+      document.querySelectorAll('['+a[0]+']').forEach(function(el){
+        if(el.getBoundingClientRect().top<vh)pin(el,a[1]);
+      });
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealAllAbove);else revealAllAbove();
+}catch(e){}})();
+</script>
+
+  <!-- SEO — injected by ForgeAI -->
+  <meta name="description" content="Brew & Co. | Artisanal Coffee & Creative Space in Brooklyn — built with ForgeAI">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Brew & Co. | Artisanal Coffee & Creative Space in Brooklyn">
+  <meta property="og:description" content="Brew & Co. | Artisanal Coffee & Creative Space in Brooklyn — built with ForgeAI">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://og-image.vercel.app/Brew%20%26%20Co.%20%7C%20Artisanal%20Coffee%20%26%20Creative%20Space%20in%20Brooklyn.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Brew & Co. | Artisanal Coffee & Creative Space in Brooklyn">
+  <meta name="twitter:description" content="Brew & Co. | Artisanal Coffee & Creative Space in Brooklyn — built with ForgeAI">
+  <meta name="twitter:image" content="https://og-image.vercel.app/Brew%20%26%20Co.%20%7C%20Artisanal%20Coffee%20%26%20Creative%20Space%20in%20Brooklyn.png">
+  <!-- JSON-LD -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Brew & Co. | Artisanal Coffee & Creative Space in Brooklyn","description":"Brew & Co. | Artisanal Coffee & Creative Space in Brooklyn — built with ForgeAI"}</script>
+</head>
+<body>
+  <div class="page-loader"><div class="loader-ring"></div></div>
+
+  <!-- Loading Screen Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Sticky Header & Navigation -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">Brew & Co.</span>
+        <span class="logo-subtext">Brooklyn, NY</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="contact.html" class="nav-link">Visit Us</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <a href="menu.html" class="btn-primary btn-sm">Order Pickup</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrap -->
+  <main>
+
+    <!-- SECTION 1: HERO (The Warm Welcome) -->
+    <section class="hero-section">
+      <!-- Full bleed hero image background -->
+      <div class="hero-bg">
+        <img src="https://picsum.photos/seed/brewhero1/1920/1080" alt="Atmospheric sunlit Brooklyn coffee shop interior with wooden furniture" class="hero-img">
+        <div class="hero-overlay"></div>
+      </div>
+      
+      <div class="container hero-content animate-in">
+        <div class="badge-accent">
+          <span class="badge-dot"></span>
+          <span>Open Mon – Sat, 7am – 8pm</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Pouring <span class="italic-title">inspiration</span>, daily.
+        </h1>
+        
+        <p class="hero-subtitle">
+          Your neighborhood living room in Williamsburg. Hand-poured single origins, warm pastries baked at dawn, and a quiet, sun-drenched corner with your name on it.
+        </p>
+        
+        <div class="hero-ctas">
+          <a href="menu.html" class="btn-primary">Explore Our Menu</a>
+          <a href="contact.html" class="btn-secondary">Find a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: THE DAILY RITUAL (Core Offerings Grid) -->
+    <section class="section offerings-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Crafted for Creative Momentum</span>
+          <h2 class="section-title">Crafted to sustain your creative rhythm.</h2>
+          <p class="section-desc">We source our beans ethically, laminate our pastry dough by hand, and build vibrant, nutrient-dense bowls to fuel your afternoon breakthrough.</p>
+        </div>
+        
+        <div class="grid-3 offerings-grid">
+          <!-- Card 1 -->
+          <div class="card card-bordered animate-reveal">
+            <div class="card-img-wrapper">
+              <img src="https://picsum.photos/seed/brewcoffee/600/450" alt="Steamed oat milk cortado served in custom ceramic cup on a rustic wooden table" class="card-img">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Barista Bar</span>
+              <h3 class="card-h3">Specialty Coffee</h3>
+              <p class="card-p">Direct-trade micro-lot single origins and custom espresso blends dialed in with precision and poured in hand-thrown ceramics.</p>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="card card-bordered animate-reveal">
+            <div class="card-img-wrapper">
+              <img src="https://picsum.photos/seed/brewpastries/600/450" alt="Golden brown freshly baked croissants cooling down on a wire baking rack" class="card-img">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Baked at 5AM</span>
+              <h3 class="card-h3">Handmade Pastries</h3>
+              <p class="card-p">Laminated sourdough croissants, cardamom buns, and seasonal organic galettes made from scratch with local Hudson Valley butter.</p>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="card card-bordered animate-reveal">
+            <div class="card-img-wrapper">
+              <img src="https://picsum.photos/seed/brewbowls/600/450" alt="Healthy grain bowl loaded with colorful roasted sweet potato, kale, and soft boiled egg" class="card-img">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Fresh Kitchen</span>
+              <h3 class="card-h3">Nourishing Bowls</h3>
+              <p class="card-p">Vibrant lunch bowls packed with ancient grains, local field greens, soft-boiled eggs, and house-made seed-sprinkle dressings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: THE SPACE (Co-Working Vibe Focus with side photo) -->
+    <section class="section space-section accent-bg">
+      <div class="container grid-2 align-center">
+        <div class="space-content animate-reveal">
+          <span class="section-eyebrow light">Designed for Focus</span>
+          <h2 class="section-title text-white">Where deep work meets deep flavor.</h2>
+          <p class="text-white-muted">
+            We believe the environment you work in dictates the quality of your output. Our space is intentionally built as a sanctuary for Brooklyn's remote workforce, writers, and students.
+          </p>
+          
+          <ul class="space-features">
+            <li>
+              <span class="feature-icon" aria-hidden="true">⚡</span>
+              <div>
+                <strong>Fiber-Optic Wi-Fi</strong>
+                <p>Unthrottled 500Mbps symmetric wireless coverage across all tables.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">🔌</span>
+              <div>
+                <strong>Power Outlets Everywhere</strong>
+                <p>AC and USB outlets integrated seamlessly beneath every banquette seat.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">🎶</span>
+              <div>
+                <strong>Curated Ambient Sound</strong>
+                <p>Acoustic dampening ceilings paired with soft, low-tempo lo-fi and jazz playlists.</p>
+              </div>
+            </li>
+          </ul>
+          
+          <div class="space-ctas">
+            <a href="contact.html" class="btn-primary btn-inverse">Reserve Workspace Table</a>
+          </div>
+        </div>
+        
+        <div class="space-visual animate-reveal">
+          <div class="space-img-container">
+            <img src="https://picsum.photos/seed/brewstudy/800/800" alt="Cozy remote work corner with wooden tables, vibrant green house plants, and warm natural sunlight" class="space-img">
+            <div class="space-accent-badge">
+              <span class="hours-title">Laptop Friendly Zone</span>
+              <p>Active All Day • Outlets Available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CURATED HIGHLIGHTS (Mini-Menu Showcase with parallax background hint) -->
+    <section class="section highlights-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">From the Bar & Kitchen</span>
+          <h2 class="section-title">Today’s highlights from the counter.</h2>
+          <p class="section-desc">A sneak peek of our seasonal rotations. Prepared with precision, sourced from organic local suppliers.</p>
+        </div>
+        
+        <div class="grid-2 highlight-split">
+          <!-- Left side: Highlight Video Tour / Interactive element -->
+          <div class="video-tour-container animate-reveal">
+            <div class="video-overlay">
+              <div class="play-btn-circle" role="button" aria-label="Play Tour Video">
+                <span class="play-icon"></span>
+              </div>
+              <h4>A Morning at Brew & Co.</h4>
+              <p>Watch our sourdough lamination & morning dial-in routine.</p>
+            </div>
+            <!-- Relevant looping video background -->
+            <video class="promo-video" autoplay muted loop playsinline>
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-coffee-maker-machine-brewing-espresso-41617-large.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          
+          <!-- Right side: Mini Menu items -->
+          <div class="mini-menu-list animate-reveal">
+            <div class="mini-menu-item">
+              <img src="https://picsum.photos/seed/menu1/150/150" alt="Glass of lavender cold brew topped with sea salt cold foam" class="mini-img">
+              <div class="mini-info">
+                <div class="mini-title-line">
+                  <h4>Lavender Cold Brew</h4>
+                  <span class="price">$6.50</span>
+                </div>
+                <p>18-hour slow cold brew infused with organic culinary lavender syrup, topped with sea salt cold foam.</p>
+                <span class="badge">Vegan Option</span>
+              </div>
+            </div>
+            
+            <div class="mini-menu-item">
+              <img src="https://picsum.photos/seed/menu2/150/150" alt="Warm baked Swedish cardamom bun with cardamom sugar" class="mini-img">
+              <div class="mini-info">
+                <div class="mini-title-line">
+                  <h4>Cardamom Bun</h4>
+                  <span class="price">$5.25</span>
+                </div>
+                <p>Our signature spiced Scandinavian bun, twisted and layered with organic cardamom sugar.</p>
+                <span class="badge">Freshly Baked</span>
+              </div>
+            </div>
+            
+            <div class="mini-menu-item">
+              <img src="https://picsum.photos/seed/menu3/150/150" alt="Vibrant harvest grain bowl topped with fresh avocado and wild rice" class="mini-img">
+              <div class="mini-info">
+                <div class="mini-title-line">
+                  <h4>The Harvest Bowl</h4>
+                  <span class="price">$14.50</span>
+                </div>
+                <p>Warm wild rice, roasted sweet potato, kale, avocado, soft-boiled egg, and ginger tahini drizzle.</p>
+                <span class="badge">GF / Veg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-4">
+          <a href="menu.html" class="btn-secondary">View Complete Interactive Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: GALLERY SHOWCASE (Atmospheric Grid) -->
+    <section class="section gallery-section surface-2-bg">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">The Gallery</span>
+          <h2 class="section-title">A sun-drenched sanctuary.</h2>
+          <p class="section-desc">Take a visual stroll through our Brooklyn home, cozy study nooks, and freshly prepared morning fuels.</p>
+        </div>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item item-large animate-reveal">
+            <img src="https://picsum.photos/seed/gal1/800/600" alt="Warm sunlight pouring over empty wooden community tables inside cafe" class="gallery-img">
+            <div class="gallery-hover">
+              <span>Main Study Hall</span>
+            </div>
+          </div>
+          <div class="gallery-item animate-reveal">
+            <img src="https://picsum.photos/seed/gal2/600/600" alt="Hario V60 dripper brewing pour-over coffee into a glass carafe" class="gallery-img">
+            <div class="gallery-hover">
+              <span>Hario V60 Precision Pours</span>
+            </div>
+          </div>
+          <div class="gallery-item animate-reveal">
+            <img src="https://picsum.photos/seed/gal3/600/600" alt="Close up shot of fresh croissants and sweets presented on rustic plates" class="gallery-img">
+            <div class="gallery-hover">
+              <span>The Pastry Board</span>
+            </div>
+          </div>
+          <div class="gallery-item animate-reveal">
+            <img src="https://picsum.photos/seed/gal4/600/600" alt="Lush green potted plants hanging alongside a clean brick wall" class="gallery-img">
+            <div class="gallery-hover">
+              <span>Lush Greenery Nooks</span>
+            </div>
+          </div>
+          <div class="gallery-item animate-reveal">
+            <img src="https://picsum.photos/seed/gal5/600/600" alt="Professional barista streaming hot oat milk into a coffee cup" class="gallery-img">
+            <div class="gallery-hover">
+              <span>Espresso Crafts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: COMMUNITY & SOCIAL PROOF (The Guest Ledger) -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">The Guest Ledger</span>
+          <h2 class="section-title">Loved by Brooklyn’s thinkers and creators.</h2>
+          <p class="section-desc">Here is what the neighborhood remote workers, students, and morning coffee ritualists have to say.</p>
+        </div>
+        
+        <div class="grid-3 testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="card card-bordered testimonial-card animate-reveal">
+            <div class="rating" aria-label="5 star rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The only place in Williamsburg where the Wi-Fi is as fast as the espresso is complex. It's my unofficial office, and the cardamom buns are otherworldly."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/300?img=32" alt="Portrait of Maya L." class="avatar">
+              <div class="author-info">
+                <span class="author-name">Maya L.</span>
+                <span class="author-role">UX Designer & Freelancer</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="card card-bordered testimonial-card animate-reveal">
+            <div class="rating" aria-label="5 star rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Most cafes make you feel guilty for keeping a laptop open. Brew & Co. is the exact opposite. Outlets everywhere, ergonomic banquettes, and great plant life."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/300?img=12" alt="Portrait of Julian K." class="avatar">
+              <div class="author-info">
+                <span class="author-name">Julian K.</span>
+                <span class="author-role">PhD Student, NYU</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="card card-bordered testimonial-card animate-reveal">
+            <div class="rating" aria-label="5 star rating">★★★★★</div>
+            <p class="testimonial-text">
+              "I come for the healthy Harvest Bowl, but end up staying for hours because of the incredible sun-drenched atmosphere. Truly a neighborhood sanctuary."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/300?img=47" alt="Portrait of Elena R." class="avatar">
+              <div class="author-info">
+                <span class="author-name">Elena R.</span>
+                <span class="author-role">Creative Director</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CALL TO ACTION BANNER (The Invitation) -->
+    <section class="cta-banner">
+      <div class="container grid-2 align-center position-relative">
+        <div class="cta-banner-text animate-reveal">
+          <h2>Ready to secure your corner?</h2>
+          <p>Drop by for a morning brew, study all afternoon, or book a dedicated group table for your creative team.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-primary">Reserve Group Table</a>
+            <a href="menu.html" class="btn-ghost">Order Daily Fuel</a>
+          </div>
+        </div>
+        <div class="cta-banner-badge-img animate-reveal">
+          <img src="https://picsum.photos/seed/brewbadge/600/400" alt="Beautifully poured heart-shaped espresso latte art served on a wooden coffee shop counter" class="cta-img-decor">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rich Footer Section -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">Brew & Co.</a>
+        <p class="footer-brand-desc">
+          A sun-drenched Williamsburg coffee sanctuary combining precisely roasted single-origins, fresh artisanal pastries, and focus-friendly workspaces.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Yelp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">The Menu</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Visit Us & FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-hours">
+        <h4>Weekly Rituals</h4>
+        <ul>
+          <li><span class="day">Mon – Sat</span> <span class="time">7:00 AM – 8:00 PM</span></li>
+          <li><span class="day">Sunday</span> <span class="time">Closed for Rest</span></li>
+          <li><span class="location">142 Berry St, Brooklyn, NY</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Slow Pours Newsletter</h4>
+        <p>Subscribe to receive news of micro-lot single origin drops, baking workshop invites, and workspace guides.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <label for="newsletterEmail" class="sr-only">Email Address</label>
+          <input type="email" id="newsletterEmail" placeholder="Your email address" required aria-label="Email Address">
+          <button type="submit" class="btn-primary">Join</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2025 Brew & Co. All rights reserved. Locally poured in Williamsburg.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

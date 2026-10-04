@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Menu | Brew & Co. Brooklyn</title>
+  
+  <!-- Inline Emoji Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+  
+  <!-- Google Fonts Pairing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Main Script -->
+  <script src="script.js" defer></script>
+<style>
+@keyframes fa-emergency-reveal { to { opacity: 1 !important; visibility: visible !important; } }
+.scroll-reveal:not(.is-visible),.reveal:not(.active):not(.is-visible),.fade-in:not(.visible):not(.in),.slide-in:not(.visible):not(.in),.fade-up:not(.is-visible),.fade-down:not(.is-visible),.zoom-in:not(.is-visible),.animate:not(.animated),.animate-up:not(.in),.will-animate:not(.animated),.animate-on-scroll:not(.animated):not(.in-view),.animate-on-load:not(.in-view):not(.visible),[data-aos]:not(.aos-animate),[data-reveal]:not(.in-view):not(.is-visible),[data-scroll]:not(.is-inview):not(.in-view),[data-animate]:not(.is-visible):not(.animated) { animation: fa-emergency-reveal 0.4s ease 4s forwards !important; }
+</style>
+<script>
+(function(){try{
+  var conv={'scroll-reveal':'is-visible','reveal':'active','fade-in':'visible','slide-in':'visible','fade-up':'is-visible','fade-down':'is-visible','zoom-in':'is-visible','animate-on-scroll':'animated','animate-on-load':'in-view','animate-up':'in','animate':'animated','will-animate':'animated'};
+  var attrs=[['data-reveal','in-view'],['data-scroll','is-inview'],['data-animate','is-visible'],['data-aos','aos-animate']];
+  function revealAllAbove(){
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    function pin(el,cls){el.classList.add(cls);el.style.setProperty('opacity','1','important');el.style.setProperty('visibility','visible','important');el.style.transform='';}
+    Object.keys(conv).forEach(function(c){
+      document.querySelectorAll('.'+c).forEach(function(el){
+        if(el.getBoundingClientRect().top<vh)pin(el,conv[c]);
+      });
+    });
+    attrs.forEach(function(a){
+      document.querySelectorAll('['+a[0]+']').forEach(function(el){
+        if(el.getBoundingClientRect().top<vh)pin(el,a[1]);
+      });
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealAllAbove);else revealAllAbove();
+}catch(e){}})();
+</script>
+
+  <!-- SEO — injected by ForgeAI -->
+  <meta name="description" content="The Menu | Brew & Co. Brooklyn — built with ForgeAI">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="/menu.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Menu | Brew & Co. Brooklyn">
+  <meta property="og:description" content="The Menu | Brew & Co. Brooklyn — built with ForgeAI">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://og-image.vercel.app/The%20Menu%20%7C%20Brew%20%26%20Co.%20Brooklyn.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Menu | Brew & Co. Brooklyn">
+  <meta name="twitter:description" content="The Menu | Brew & Co. Brooklyn — built with ForgeAI">
+  <meta name="twitter:image" content="https://og-image.vercel.app/The%20Menu%20%7C%20Brew%20%26%20Co.%20Brooklyn.png">
+  <!-- JSON-LD -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"The Menu | Brew & Co. Brooklyn","description":"The Menu | Brew & Co. Brooklyn — built with ForgeAI"}</script>
+</head>
+<body>
+  <div class="page-loader"><div class="loader-ring"></div></div>
+
+  <!-- Loading Screen Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Sticky Header & Navigation -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">Brew & Co.</span>
+        <span class="logo-subtext">Brooklyn, NY</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="contact.html" class="nav-link">Visit Us</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="btn-primary btn-sm" id="orderBtn">Order Pickup</button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrap -->
+  <main class="menu-page-wrap">
+
+    <!-- PAGE HERO HEADER -->
+    <section class="section menu-hero">
+      <div class="container text-center animate-in">
+        <span class="section-eyebrow">Honest ingredients, prepared with care</span>
+        <h1 class="page-title">The Brew & Co. <span class="italic-title">Menu</span></h1>
+        <p class="section-desc max-w-600">
+          We partner with local Hudson Valley farms and ethical direct-trade coffee importers to bring you a clean, delicious menu to sustain your creative rhythm.
+        </p>
+        
+        <!-- Sticky Category Filter Navigation Bar -->
+        <div class="menu-filter-bar">
+          <button class="filter-btn active" data-category="all">All Items</button>
+          <button class="filter-btn" data-category="coffee">Espresso & Filter</button>
+          <button class="filter-btn" data-category="pastries">Pastries & Bakes</button>
+          <button class="filter-btn" data-category="bowls">Nourishing Bowls</button>
+          <button class="filter-btn" data-category="specials">Seasonal Specials</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION-TO-SECTION THIN RULE -->
+    <div class="section-separator"></div>
+
+    <!-- DYNAMIC MENU SECTION -->
+    <section class="section menu-listings-section">
+      <div class="container">
+        
+        <!-- ESPRESSO & FILTER SECTION -->
+        <div class="menu-category-group" id="category-coffee">
+          <div class="category-header animate-reveal">
+            <h2 class="category-title">Barista-Crafted Beverages</h2>
+            <p class="category-subtitle">Sourced with integrity, roasted to bring out natural sweetness, and dialed in every morning.</p>
+          </div>
+          
+          <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-item-card card card-bordered animate-reveal" data-category="coffee">
+              <div class="menu-item-img-container">
+                <img src="https://picsum.photos/seed/cortado2/600/400" alt="Oat Milk Cortado" class="menu-item-img">
+                <div class="menu-item-tags">
+                  <span class="diet-tag tag-vegan">Vegan Option</span>
+                </div>
+              </div>
+              <div class="menu-item-details">
+                <div class="menu-item-header">
+                  <h3 class="item-name">Oat Milk Cortado</h3>
+                  <span class="item-price">$5.25</span>
+                </div>
+                <p class="item-description">Equal parts espresso and warm silky oat milk, bringing out deep notes of roasted hazelnut and dark chocolate.</p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-item-card card card-bordered animate-reveal" data-category="coffee">
+              <div class="menu-item-img-container">
+                <img src="https://picsum.photos/seed/pourover/600/400" alt="Direct Trade Pour Over" class="menu-item-img">
+              </div>
+              <div class="menu-item-details">
+                <div class="menu-item-header">
+                  <h3 class="item-name">Single Origin Pour Over</h3>
+                  <span class="item-price">$6.00</span>
+                </div>
+                <p class="item-description">Rotating microlots brewed carefully on the V60. Ask your barista about today’s Ethiopian or Colombian offerings.</p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="menu-item-card card card-bordered animate-reveal" data-category="coffee">
+              <div class="menu-item-img-container">
+                <img src="https://picsum.photos/seed/flatwhite/600/400" alt="Classic Flat White" class="menu-item-img">
+              </div>
+              <div class="menu-item-details">
+                <div class="menu-item-header">
+                  <h3 class="item-name">Classic Flat White</h3>
+                  <span class="item-price">$5.00</span>
+                </div>
+                <p class="item-description">Double shot of our house espresso pulled over microfoamed whole milk with velvety texture.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PASTRIES & BAKES SECTION -->
+        <div class="menu-category-group" id="category-pastries">
+          <div class="category-header animate-reveal">
+            <h2 class="category-title">Fresh from the Ovens</h2>
+            <p class="category-subtitle">Laminated, proofed, and baked in-house at 5:00 AM daily using organic flour and grass-fed butter.</p>
+          </div>
+          
+          <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-item-card card card-bordered animate-reveal" data-category="pastries">
+              <div class="menu-item-img-container">
+                <img src="https://picsum.photos/seed/croissant3/600/400" alt="House Butter Croissant" class="menu-item-img">
+              </div>
+              <div class="menu-item-details">
+                <div class="menu-item-header">
+                  <h3 class="item-name">Laminated Butter Croissant</h3>
+                  <span class="item-price">$4.75</span>
+                </div>
+                <p class="item-description">Flaky, rich, and beautifully golden layers of hand-laminated pastry dough made with organic French-style butter.</p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-item-card card card-bordered animate-reveal" data-category="pastries">
+              <div class="menu-item-img-container">
+                <img src="https://picsum.photos/seed/muffin/600/400" alt="Cardamom Almond Muffin" class="menu-item-img">
+                <div class="menu-item-tags">
+                  <span class="diet-tag tag-gf">GF</span>
+                </div>
+              </div>
+              <div class="menu-item-details">
+                <div class="menu-item-header">
+                  <h3 class="item-name">Cardamom Almond Flour Muffin</h3>
+                  <span class="item-price">$5.25</span>
+                </div>
+                <p class="item-description">Moist, gluten-free bake rich with ground almonds, cold-ground cardamom seeds, and topped with sliced toasted almonds.</p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="menu-item-card card card-bordered animate-reveal" data-category="pastries">
+              <div class="menu-item-img-container">
+                <img src="https://picsum.photos/seed/bun/600/400" alt="Swedish Cardamom Bun" class="menu-item-img">
+              </div>
+              <div class="menu-item-details">
+                <div class="menu-item-header">
+                  <h3 class="item-name">Swedish Cardamom Bun</h3>
+                  <span class="item-price">$5.00</span>
+                </div>
+                <p class="item-description">Twisted sweet dough braided with cardamom butter filling, baked golden and pearl-sugar glazed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NOURISHING BOWLS SECTION -->
+        <div class="menu-category-group" id="category-bowls">
+          <div class="category-header animate-reveal">
+            <h2 class="category-title">Sustained Energy Bowls</h2>
+            <p class="category-subtitle">Vibrant, nutrient-dense bowls built to keep you focused through your afternoon creative sprint.</p>
+          </div>
+          
+          <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-item-card card card-bordered animate-reveal" data-category="bowls">
+              <div class="menu-item-img-container">
+                <img src="https://picsum.photos/seed/grainbowl1/600/400" alt="Harvest Grain Bowl" class="menu-item-img">
+                <div class="menu-item-tags">
+                  <span class="diet-tag tag-veg">Vegetarian</span>
+                  <span class="diet-tag tag-gf">GF</span>
+                </div>
+              </div>
+              <div class="menu-item-details">
+                <div class="menu-item-header">
+                  <h3 class="item-name">Harvest Grain Bowl</h3>
+                  <span class="item-price">$14.50</span>
+                </div>
+                <p class="item-description">Tricolor quinoa, roasted sweet potatoes, organic baby kale, fresh avocado half, and a jammy, soft-boiled farm egg with lemon tahini dressing.</p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-item-card card card-bordered animate-reveal" data-category="bowls">
+              <div class="menu-item-img-container">
+                <img src="https://picsum.photos/seed/greenbowl/600/400" alt="Sesame Ginger Tofu Bowl" class="menu-item-img">
+                <div class="menu-item-tags">
+                  <span class="diet-tag tag-vegan">Vegan</span>
+                  <span class="diet-tag">Nut-Free</span>
+                </div>
+              </div>
+              <div class="menu-item-details">
+                <div class="menu-item-header">
+                  <h3 class="item-name">Sesame Ginger Tofu Bowl</h3>
+                  <span class="item-price">$15.00</span>
+                </div>
+                <p class="item-description">Seared organic tofu, brown wild rice, crisp pickled radishes, steamed broccoli florets, and a heavy ginger-sesame splash.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEASONAL SPECIALS SECTION -->
+        <div class="menu-category-group" id="category-specials">
+          <div class="category-header animate-reveal">
+            <h2 class="category-title">Current Seasonal Rotation</h2>
+            <p class="category-subtitle">Small-batch kitchen creations inspired by the changing landscape of New York's seasons.</p>
+          </div>
+          
+          <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-item-card card card-bordered animate-reveal" data-category="specials">
+              <div class="menu-item-img-container">
+                <img src="https://picsum.photos/seed/lavendercold/600/400" alt="Lavender Cold Brew" class="menu-item-img">
+                <div class="menu-item-tags">
+                  <span class="diet-tag tag-vegan">Vegan</span>
+                </div>
+              </div>
+              <div class="menu-item-details">
+                <div class="menu-item-header">
+                  <h3 class="item-name">Lavender Cold Brew</h3>
+                  <span class="item-price">$6.50</span>
+                </div>
+                <p class="item-description">Our signature 18-hour cold brew infused with organic culinary lavender syrup, capped with a fluffy layer of salted oat milk cold foam.</p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-item-card card card-bordered animate-reveal" data-category="specials">
+              <div class="menu-item-img-container">
+                <img src="https://picsum.photos/seed/figtoast/600/400" alt="Sourdough Fig Ricotta Toast" class="menu-item-img">
+                <div class="menu-item-tags">
+                  <span class="diet-tag tag-veg">Vegetarian</span>
+                </div>
+              </div>
+              <div class="menu-item-details">
+                <div class="menu-item-header">
+                  <h3 class="item-name">Sourdough Fig & Whipped Ricotta</h3>
+                  <span class="item-price">$9.50</span>
+                </div>
+                <p class="item-description">Thick slice of toasted Williamsburg sourdough topped with whipped local farm ricotta, mission figs, and a heavy drizzle of organic hot honey.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION-TO-SECTION THIN RULE -->
+    <div class="section-separator"></div>
+
+    <!-- CTA & CATERING SECTION -->
+    <section class="section menu-cta-section accent-bg">
+      <div class="container text-center animate-reveal">
+        <span class="section-eyebrow light">Crafted with Hospitality</span>
+        <h2 class="section-title text-white">Planning a workspace sprint or team gathering?</h2>
+        <p class="section-desc max-w-600 text-light">
+          We offer craft coffee boxes, fresh pastries by the dozen, and delicious catering bowl sets for neighborhood offices, creative labs, and home setups.
+        </p>
+        <div class="cta-buttons-wrap">
+          <button class="btn-primary" id="orderBtn2">Order Online Pickup</button>
+          <a href="contact.html" class="btn-secondary">Inquire for Catering</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- TOAST/ORDER PICKUP IFRAME MODAL (Drawn on Demand) -->
+  <div class="order-modal-overlay" id="orderModal">
+    <div class="order-modal-container">
+      <div class="order-modal-header">
+        <div class="modal-branding">
+          <span class="logo-text">Brew & Co.</span>
+          <span class="logo-subtext">Quick Checkout</span>
+        </div>
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Order Screen">×</button>
+      </div>
+      <div class="order-modal-body">
+        <div class="toast-loading">
+          <div class="spinner"></div>
+          <p>Connecting to secure Checkout Terminal...</p>
+        </div>
+        <!-- Mock Square/Toast checkout platform -->
+        <div class="mock-checkout-ui">
+          <h3>Confirm Your Order Details</h3>
+          <p class="checkout-hint">Pick up at 142 Berry St, Williamsburg. Ready in 10-15 minutes.</p>
+          
+          <div class="checkout-summary-card">
+            <div class="summary-line">
+              <span>Selected Item:</span>
+              <span id="summary-item-name">House Brew & Cardamom Bun combo</span>
+            </div>
+            <div class="summary-line font-bold">
+              <span>Total Estimate:</span>
+              <span id="summary-item-price">$9.75</span>
+            </div>
+          </div>
+          
+          <div class="input-group">
+            <label for="pickup-name">Your Full Name</label>
+            <input type="text" id="pickup-name" placeholder="Sarah Jenkins" required>
+          </div>
+          <div class="input-group">
+            <label for="pickup-phone">Phone for SMS Notification</label>
+            <input type="tel" id="pickup-phone" placeholder="(555) 000-0000" required>
+          </div>
+          
+          <button class="btn-primary full-width-btn" id="submitMockOrder">Pay & Submit Pickup Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container grid-3 footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-text">Brew & Co.</span>
+          <span class="logo-subtext">Brooklyn, NY</span>
+        </a>
+        <p class="footer-tagline">Slow pours for fast minds.</p>
+        <p class="footer-about">A sun-drenched Williamsburg workspace coffee house combining precisely roasted single-origin espresso, freshly baked artisanal bakes, and nourishing lunches.</p>
+      </div>
+      
+      <div class="footer-hours">
+        <h4 class="footer-h4">Gathering Hours</h4>
+        <ul class="hours-list">
+          <li><span class="day">Monday - Friday</span> <span class="time">7:00 AM – 8:00 PM</span></li>
+          <li><span class="day">Saturday</span> <span class="time">7:00 AM – 8:00 PM</span></li>
+          <li><span class="day">Sunday</span> <span class="time">Closed for Deep Rest</span></li>
+        </ul>
+        <p class="footer-note">Unthrottled Fiber Wi-Fi + Power sockets active everyday.</p>
+      </div>
+      
+      <div class="footer-contact">
+        <h4 class="footer-h4">Our Sanctuary</h4>
+        <p class="address">142 Berry Street,<br>Brooklyn, NY 11249</p>
+        <p class="subway">A brief 3-minute walk from Bedford Ave (L Train)</p>
+        <p class="email-link"><a href="mailto:hello@brewandcobk.com">hello@brewandcobk.com</a></p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <p class="copyright">&copy; 2026 Brew & Co. LLC. Hand-poured with passion in Brooklyn.</p>
+        <div class="bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Space Guidelines</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
